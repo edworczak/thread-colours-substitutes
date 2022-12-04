@@ -2,9 +2,23 @@ import { theme } from "./shared-styles/theme.styled";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+    @font-face {
+        font-family: 'Roboto';
+        src: local('Roboto Medium'), url('https://roboto-webfont.googlecode.com/files/Roboto-Medium-webfont.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: local('Roboto Light'), url('https://roboto-webfont.googlecode.com/files/Roboto-Light-webfont.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+    }
+  
     body {
-      background: ${theme.background};
-      font-family: 'Roboto Condensed', sans-serif;
-      margin: 0;
+        background: ${theme.background};
+        font-family: 'Roboto Light', sans-serif;
+        margin: 0;
     }
 `;
