@@ -1,0 +1,38 @@
+{
+  "name": "thread-colours-substitutes",
+  "version": "1.0.0",
+  "description": "Zamienniki kolorów mulin",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,css,html}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edworczak/acnh.git"
+  },
+  "author": "Ewa Dworczak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edworczak/thread-colours-substitutes/issues"
+  },
+  "homepage": "https://github.com/edworczak/thread-colours-substitutes#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "parcel": "^2.2.1",
+    "prettier": "^2.5.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
