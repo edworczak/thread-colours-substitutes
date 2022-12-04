@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { theme } from "../../shared-styles/theme.styled";
 
 export const ColourWrapper = styled.div`
@@ -11,11 +11,11 @@ export const ColourWrapper = styled.div`
 `;
 
 export const ColourImage = styled.div`
-  background: ${props => props.rgb || theme.background};
+  background: ${(props) => props.rgb || theme.background};
   height: 100px;
   width: 100%;
 `;
 
 export const ColourInfoWrapper = styled.div`
-    padding: 10px 5px;
+  padding: 10px 5px;
 `;

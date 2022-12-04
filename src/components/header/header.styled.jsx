@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 20px;
 `;
 

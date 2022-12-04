@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ColourInfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  
+
   &:not(:last-of-type) {
     margin-bottom: 4px;
   }
