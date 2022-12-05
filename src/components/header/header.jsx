@@ -1,10 +1,18 @@
-import { HeaderWrapper, HeaderLogo, HeaderName } from "./header.styled";
+import {
+  HeaderWrapper,
+  HeaderLogo,
+  HeaderName,
+  LogoWrapper,
+} from "./header.styled";
+import pl from "../../data/pl";
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <HeaderLogo>Koło Gospodyń Internetowych</HeaderLogo>
-      <HeaderName>Zamienniki Kolorów Mulin</HeaderName>
+      <LogoWrapper>
+        <HeaderLogo>{pl.header.brand}</HeaderLogo>
+        <HeaderName>{pl.header.name}</HeaderName>
+      </LogoWrapper>
     </HeaderWrapper>
   );
 };

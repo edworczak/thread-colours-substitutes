@@ -18,7 +18,8 @@ export const GlobalStyles = createGlobalStyle`
   
     body {
         background: ${theme.background};
-        font-family: 'Roboto Light', sans-serif;
+        font-family: ${theme.font};
+        font-weight: 300;
         margin: 0;
     }
 `;
