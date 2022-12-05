@@ -28,13 +28,13 @@ const ColourList = () => {
     <ColourListWrapper>
       {visibleColours.map((colour, index) => {
         return (
-            <Colour
-                key={`${index}`}
-                rgb={colour.rgb}
-                dmc={colour.dmc}
-                anchor={colour.anchor}
-                ariadna={colour.ariadna}
-            />
+          <Colour
+            key={`${index}`}
+            rgb={colour.rgb}
+            dmc={colour.dmc}
+            anchor={colour.anchor}
+            ariadna={colour.ariadna}
+          />
         );
       })}
     </ColourListWrapper>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../shared-styles/theme.styled";
 
 export const ColourWrapper = styled.div`
-  display: ${(props) => props.print ? 'block' : 'none'};
+  display: ${(props) => (props.print ? "block" : "none")};
   min-width: 150px;
   padding: 0 10px 20px;
 `;

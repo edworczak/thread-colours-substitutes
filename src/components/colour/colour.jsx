@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 import {
   ColourWrapper,
@@ -32,10 +32,10 @@ const Colour = ({ rgb, dmc, anchor, ariadna }) => {
       });
 
       if (
-          (dmc.includes(data.number)) ||
-          (anchor.includes(data.number)) ||
-          (ariadna.includes(data.number)) ||
-          (data.number === "")
+        dmc.includes(data.number) ||
+        anchor.includes(data.number) ||
+        ariadna.includes(data.number) ||
+        data.number === ""
       ) {
         setPrint(true);
       } else {
@@ -45,8 +45,12 @@ const Colour = ({ rgb, dmc, anchor, ariadna }) => {
   };
 
   return (
-    <ColourWrapper print={print} data-dmc={dmc} data-anchor={anchor} data-ariadna={ariadna}>
-      {searchNumber.number === "DZIALA" && <h1>dziala</h1>}
+    <ColourWrapper
+      print={print}
+      data-dmc={dmc}
+      data-anchor={anchor}
+      data-ariadna={ariadna}
+    >
       <ColourBG>
         <ColourImage rgb={rgb} />
         <ColourInfoWrapper>
