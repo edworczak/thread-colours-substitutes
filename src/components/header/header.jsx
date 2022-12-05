@@ -5,6 +5,7 @@ import {
   LogoWrapper,
 } from "./header.styled";
 import pl from "../../data/pl";
+import Search from "../search/search";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         <HeaderLogo>{pl.header.brand}</HeaderLogo>
         <HeaderName>{pl.header.name}</HeaderName>
       </LogoWrapper>
+      <Search />
     </HeaderWrapper>
   );
 };

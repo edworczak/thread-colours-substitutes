@@ -7,13 +7,13 @@ const colours = {
   },
   DMCBLANC: {
     rgb: "#f9f9f5",
-    dmc: "Blanc",
+    dmc: "BLANC",
     anchor: "00002",
     ariadna: "",
   },
   DMCECRU: {
     rgb: "#f0e3cd",
-    dmc: "Ecru",
+    dmc: "ECRU",
     anchor: "00387",
     ariadna: "1790",
   },

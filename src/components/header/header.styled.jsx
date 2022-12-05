@@ -2,8 +2,11 @@ import styled from "styled-components";
 import { theme } from "../../shared-styles/theme.styled";
 
 export const HeaderWrapper = styled.header`
+  align-items: flex-end;
   background: ${theme.background};
   box-shadow: ${theme.shadow};
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
 `;
 
@@ -13,7 +16,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const HeaderLogo = styled.h2`
-  display: inline-block;
+  display: inline;
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -21,7 +24,7 @@ export const HeaderLogo = styled.h2`
 `;
 
 export const HeaderName = styled.h1`
-  display: inline-block;
+  display: inline;
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;

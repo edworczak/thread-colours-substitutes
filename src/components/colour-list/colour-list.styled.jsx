@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {theme} from "../../shared-styles/theme.styled";
+import { theme } from "../../shared-styles/theme.styled";
 
-export const ColourList = styled.div`
+export const ColourListWrapper = styled.div`
   box-sizing: border-box;
   display: grid;
   grid-auto-flow: row;
