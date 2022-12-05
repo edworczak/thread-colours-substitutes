@@ -323,6 +323,12 @@ const colours = {
     anchor: "00253",
     ariadna: "1708",
   },
+  DMC166: {
+    rgb: "#B9A216",
+    dmc: "166",
+    anchor: "00255",
+    ariadna: "",
+  },
 };
 
 export default colours;
