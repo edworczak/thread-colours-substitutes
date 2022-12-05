@@ -15,6 +15,6 @@ export const ColourBrand = styled.span`
 
 export const ColourNumber = styled.span`
   display: inline-block;
-  font-weight: 300;
+  font-weight: ${(props) => (props.accurate ? 500 : 300)};
   margin-left: 10px;
 `;

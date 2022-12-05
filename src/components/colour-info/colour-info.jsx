@@ -4,7 +4,7 @@ import {
   ColourNumber,
 } from "./colour-info.styled";
 
-const ColourInfo = ({ brand, number }) => {
+const ColourInfo = ({ brand, number, accurate }) => {
   if (!number) {
     number = "–";
   }
@@ -12,7 +12,7 @@ const ColourInfo = ({ brand, number }) => {
   return (
     <ColourInfoWrapper>
       <ColourBrand>{brand}</ColourBrand>
-      <ColourNumber>{number}</ColourNumber>
+      <ColourNumber accurate={accurate}>{number}</ColourNumber>
     </ColourInfoWrapper>
   );
 };

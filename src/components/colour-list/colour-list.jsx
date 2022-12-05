@@ -6,15 +6,7 @@ const ColourList = () => {
   return (
     <ColourListWrapper>
       {Object.values(colours).map((colour, index) => {
-        return (
-          <Colour
-            key={`${index}`}
-            rgb={colour.rgb}
-            dmc={colour.dmc}
-            anchor={colour.anchor}
-            ariadna={colour.ariadna}
-          />
-        );
+        return <Colour key={`dmc${colour.dmc}-${index}`} colour={colour} />;
       })}
     </ColourListWrapper>
   );

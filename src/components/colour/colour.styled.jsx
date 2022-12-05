@@ -4,6 +4,7 @@ import { theme } from "../../shared-styles/theme.styled";
 export const ColourWrapper = styled.div`
   display: ${(props) => (props.print ? "block" : "none")};
   min-width: 150px;
+  ${(props) => (props.accurate ? "order: -1" : "")};
   padding: 0 10px 20px;
 `;
 
