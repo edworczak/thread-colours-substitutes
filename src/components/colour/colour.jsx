@@ -16,6 +16,7 @@ const Colour = ({ rgb, dmc, anchor, ariadna }) => {
   const [searchNumber, setSearchNumber] = useState({
     data: {
       number: "",
+      brand: "",
     },
   });
 
@@ -31,12 +32,19 @@ const Colour = ({ rgb, dmc, anchor, ariadna }) => {
         ...data,
       });
 
-      if (
-        dmc.includes(data.number) ||
-        anchor.includes(data.number) ||
-        ariadna.includes(data.number) ||
-        data.number === ""
-      ) {
+      const isDMC = dmc.includes(data.number);
+      const isAnchor = anchor.includes(data.number);
+      const isAriadna = ariadna.includes(data.number);
+      const anyBrand = isDMC || isAnchor || isAriadna;
+      const noBrand = data.brand === "";
+
+      if ((noBrand && anyBrand)) {
+        setPrint(true);
+      } else if (isDMC && data.brand === pl.brands.dmc) {
+        setPrint(true);
+      } else if (isAnchor && data.brand === pl.brands.anchor) {
+        setPrint(true);
+      } else if (isAriadna && data.brand === pl.brands.ariadna) {
         setPrint(true);
       } else {
         setPrint(false);

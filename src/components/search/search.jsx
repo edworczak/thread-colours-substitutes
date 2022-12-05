@@ -8,10 +8,6 @@ const Search = () => {
     getSearchedNumber("");
   }, []);
 
-  const handleSearch = (e) => {
-    getSearchedNumber(e);
-  };
-
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       getSearchedNumber(e);
@@ -19,8 +15,24 @@ const Search = () => {
   };
 
   const getSearchedNumber = (e) => {
-    const number = e === "" ? "" : e.target.value.toUpperCase();
-    searchListener.dispatch("searching", { number: number });
+    let number = e === "" ? "" : e.target.value.toUpperCase();
+    let brand = "";
+
+    if (number.includes(pl.brands.dmc)) {
+      brand = pl.brands.dmc;
+    } else if (number.includes(pl.brands.anchor)) {
+      brand = pl.brands.anchor;
+    } else if (number.includes(pl.brands.ariadna)) {
+      brand = pl.brands.ariadna;
+    }
+
+    number = number.replace(brand, '');
+    number = number.replace(' ', '');
+
+    searchListener.dispatch("searching", {
+      number: number,
+      brand: brand,
+    });
   };
 
   return (
@@ -29,7 +41,6 @@ const Search = () => {
         {pl.header.search}:
         <SearchInput
           type="text"
-          onChange={handleSearch}
           onKeyDown={handleKeyDown}
         />
       </label>

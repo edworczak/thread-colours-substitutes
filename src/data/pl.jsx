@@ -4,6 +4,11 @@ const pl = {
     name: "Zamienniki Kolorów Mulin",
     search: "Wyszukaj",
   },
+  brands: {
+    dmc: "DMC",
+    anchor: "ANCHOR",
+    ariadna: "ARIADNA",
+  },
   colour: {
     dmc: "DMC",
     anchor: "An.",
