@@ -7,5 +7,8 @@ export const theme = {
     columns2: "530px",
     columns3: "700px",
     columns4: "900px",
+    columns5: "1060px",
+    columns6: "1230px",
+    columns7: "1400px",
   },
 };
