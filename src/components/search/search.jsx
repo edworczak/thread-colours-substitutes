@@ -4,7 +4,7 @@ import searchListener from "../../events";
 import { useEffect } from "react";
 import brandNames from "../../data/brandNames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Search = () => {
   useEffect(() => {
