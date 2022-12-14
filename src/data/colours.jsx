@@ -551,6 +551,14 @@ const colours = {
     anchor: "01005",
     ariadna: "1554 1555",
   },
+  dmc307: {
+    id: "dmc307",
+    order: 339,
+    rgb: "#FFD438",
+    dmc: "307",
+    anchor: "00289",
+    ariadna: "1503",
+  },
 };
 
 export default colours;

@@ -94,14 +94,19 @@ const Colour = ({ colour }) => {
         setSearchMatch(false);
       }
 
+      const ariadnaArr = ariadna.split(" ");
+
       setExactBrand({
         dmc: data.number === dmc,
         anchor: data.number === anchor,
-        ariadna: data.number === ariadna,
+        ariadna: data.number === ariadnaArr[0] || data.number === ariadnaArr[1],
       });
 
       setExactMatch(
-        data.number === dmc || data.number === anchor || data.number === ariadna
+        data.number === dmc ||
+          data.number === anchor ||
+          data.number === ariadnaArr[0] ||
+          data.number === ariadnaArr[1]
       );
     });
   };

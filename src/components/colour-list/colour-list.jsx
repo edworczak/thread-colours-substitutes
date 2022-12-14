@@ -10,6 +10,7 @@ const ColourList = () => {
     if (colour1.order > colour2.order) return 1;
     return 0;
   });
+
   return (
     <ColourListWrapper>
       {orderedColours.map((colour) => {
