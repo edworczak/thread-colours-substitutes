@@ -3,10 +3,19 @@ import Colour from "../colour/colour";
 import colours from "../../data/colours";
 
 const ColourList = () => {
+  const orderedColours = Object.values(colours);
+
+  orderedColours.sort(function (colour1, colour2) {
+    if (colour1.order < colour2.order) return -1;
+    if (colour1.order > colour2.order) return 1;
+    return 0;
+  });
   return (
     <ColourListWrapper>
-      {Object.values(colours).map((colour, index) => {
-        return <Colour key={`dmc${colour.dmc}-${index}`} colour={colour} />;
+      {orderedColours.map((colour) => {
+        return (
+          <Colour key={`dmc${colour.dmc}-${colour.order}`} colour={colour} />
+        );
       })}
     </ColourListWrapper>
   );

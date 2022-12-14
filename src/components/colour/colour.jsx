@@ -12,7 +12,7 @@ import brandNames from "../../data/brandNames";
 import searchListener from "../../events";
 
 const Colour = ({ colour }) => {
-  const { rgb, dmc, anchor, ariadna } = colour;
+  const { order, rgb, dmc, anchor, ariadna } = colour;
 
   const updateBrandColours = (codeName, brand, label, number) => {
     // Create object with Colour details from each brand
@@ -107,7 +107,7 @@ const Colour = ({ colour }) => {
   };
 
   return (
-    <ColourWrapper accurate={exactMatch} print={searchMatch}>
+    <ColourWrapper accurate={exactMatch} print={searchMatch} data-order={order}>
       <ColourBG>
         <ColourImage rgb={rgb} />
         <ColourInfoWrapper>

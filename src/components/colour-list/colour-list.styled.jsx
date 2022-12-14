@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../shared-styles/theme.styled";
 
 export const ColourListWrapper = styled.div`
+  align-items: stretch;
   box-sizing: border-box;
   display: grid;
   grid-auto-flow: row;

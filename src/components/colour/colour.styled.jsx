@@ -12,6 +12,7 @@ export const ColourBG = styled.div`
   background: ${theme.background};
   border-radius: 2px;
   box-shadow: ${theme.shadow};
+  height: 100%;
   overflow: hidden;
 `;
 
