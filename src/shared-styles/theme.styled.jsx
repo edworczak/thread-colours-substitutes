@@ -11,4 +11,7 @@ export const theme = {
     columns6: "1230px",
     columns7: "1400px",
   },
+  colours: {
+    main: "#55939C",
+  },
 };

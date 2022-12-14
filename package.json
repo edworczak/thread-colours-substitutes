@@ -6,7 +6,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,css,html}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "rm -rf dist/* && parcel src/index.html",
-    "build-dev": "parcel build src/index.html",
+    "build-dev": "rm -rf dist/* && parcel build src/index.html",
     "build-github": "rm -rf docs/* && parcel build src/index.html --public-url /"
   },
   "repository": {
@@ -29,6 +29,10 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.3"
