@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 
-import {
-  ColourWrapper,
-  ColourImage,
-  ColourInfoWrapper,
-  ColourBG,
-} from "./colour.styled";
-
-import ColourInfo from "../colour-info/colour-info";
 import brandNames from "../../data/brandNames";
 import searchListener from "../../events";
+import ColourInfo from "../colour-info/colour-info";
+import {
+  ColourBG,
+  ColourImage,
+  ColourInfoWrapper,
+  ColourWrapper,
+} from "./colour.styled";
 
 const Colour = ({ colour }) => {
   const { order, rgb, dmc, anchor, ariadna } = colour;

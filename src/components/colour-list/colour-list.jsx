@@ -1,6 +1,6 @@
-import { ColourListWrapper } from "./colour-list.styled";
-import Colour from "../colour/colour";
 import colours from "../../data/colours";
+import Colour from "../colour/colour";
+import { ColourListWrapper } from "./colour-list.styled";
 
 const ColourList = () => {
   const orderedColours = Object.values(colours);

@@ -1,6 +1,6 @@
 import {
-  ColourInfoWrapper,
   ColourBrand,
+  ColourInfoWrapper,
   ColourNumber,
   TextWrapper,
 } from "./colour-info.styled";

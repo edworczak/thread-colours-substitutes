@@ -1,5 +1,6 @@
-import { theme } from "./shared-styles/theme.styled";
 import { createGlobalStyle } from "styled-components";
+
+import { theme } from "./shared-styles/theme.styled";
 
 export const GlobalStyles = createGlobalStyle`
     @font-face {

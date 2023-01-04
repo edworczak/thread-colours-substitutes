@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { theme } from "../../shared-styles/theme.styled";
 
 export const HeaderWrapper = styled.header`
@@ -8,11 +9,25 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 20px;
+
+  @media only screen and (max-width: ${theme.breakpoints.mobile}) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const LogoWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: ${theme.breakpoints.mobile}) {
+    margin-bottom: 16px;
+  }
+`;
+
+export const IconWrapper = styled.a`
+  display: inline-block;
+  margin-right: 8px;
 `;
 
 export const HeaderLogo = styled.h2`

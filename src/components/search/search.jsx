@@ -1,10 +1,11 @@
-import { SearchWrapper, SearchInput, IconWrapper } from "./search.styled";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
+
+import brandNames from "../../data/brandNames";
 import pl from "../../data/pl";
 import searchListener from "../../events";
-import { useEffect } from "react";
-import brandNames from "../../data/brandNames";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { IconWrapper, SearchInput, SearchWrapper } from "./search.styled";
 
 const Search = () => {
   useEffect(() => {
